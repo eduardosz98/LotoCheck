@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:LotoCheck" x:Class="LotoCheck.MainPage">
+   <StackLayout>
+        <StackLayout BackgroundColor="Gray" VerticalOptions="Start" HeightRequest="40">
+            <Label TextColor="Blue" FontAttributes="Bold" FontSize="25" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Text="LotoCheck"/>
+        </StackLayout>
+        <ScrollView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <StackLayout Padding="50">
+                <Button x:Name="btnCamera" Clicked="RealOcr_Clicked" Text="Escanear Jogo"></Button>  
+                <Image x:Name="imgScanned" WidthRequest="200" HeightRequest="200" />  
+                <Label x:Name="lblResult" FontSize="32" />      
+                <Button x:Name="btnClearText" Clicked="Limpar_Clicked" VerticalOptions="End" WidthRequest="80" HeightRequest="45" Text="Limpar resultado"/>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>
